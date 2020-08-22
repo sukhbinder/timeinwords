@@ -51,10 +51,10 @@ class TimeInWords():
         elif (mins < 31):      
             hr = self.words[hrs-1]
             mn = self.words[mins-1]
-            msg = header + mn + " past " + hr + "."
+            msg = header + mn + " minutes past " + hr + "."
         else:
             hr = self.words[hrs]
             mn =self.words[(60 - mins-1)]
-            msg = header + mn + " to " + hr + "."
+            msg = header + mn + " minutes to " + hr + "."
         return msg
 

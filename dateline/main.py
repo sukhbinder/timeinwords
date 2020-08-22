@@ -10,6 +10,7 @@ def main():
 def main_tw():
     while True:
         try:
+            print(" "*50, end="\r")
             test = TimeInWords()
             print(test, end="\r")
             time.sleep(10)
